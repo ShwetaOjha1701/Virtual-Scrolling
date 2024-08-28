@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>User Name</th>
+        <th>User DOB</th>
+        <th>User Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.user_id }}</td>
+        <td>{{ item.user_name }}</td>
+        <td>{{ item.user_dob }}</td>
+        <td>{{ item.user_address }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="loadMoreData()">Show More</button>
+</div>
